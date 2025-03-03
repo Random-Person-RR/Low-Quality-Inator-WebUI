@@ -319,4 +319,4 @@ def index():
     return render_template_string(html_template)
 
 if __name__ == '__main__':
-    app.run(debug=True, port=48716)
+    app.run(port=48716)
