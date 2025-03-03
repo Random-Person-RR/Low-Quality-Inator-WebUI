@@ -200,7 +200,7 @@ def index():
                 files_to_delete.append(yt_input_file)
 
                 # Use the downloaded file as FFmpeg input.
-                ffmpeg_cmd = ['ffmpeg', '-hwaccel', 'mediacodec', '-y', '-i', yt_input_file, '-crf', '63']
+                ffmpeg_cmd = ['ffmpeg', '-y', '-i', yt_input_file, '-crf', '63']
             else:
                 # Use best quality piped directly from yt-dlp.
                 if audio_only:
@@ -208,7 +208,7 @@ def index():
                 else:
                     quality = 'best'
                 yt_dlp_cmd = ['yt-dlp', '-o', '-', '-f', quality, youtube_url]
-                ffmpeg_cmd = ['ffmpeg', '-hwaccel', 'mediacodec', '-y', '-i', '-', '-crf', '63']
+                ffmpeg_cmd = ['ffmpeg', '-y', '-i', '-', '-crf', '63']
 
             # If only audio, disable video stream.
             if audio_only:
