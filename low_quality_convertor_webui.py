@@ -6,7 +6,7 @@ from flask import Flask, render_template_string, request, send_file, after_this_
 import argparse
 
 # Default acceleration and extra encoding options
-accel = 'auto'
+accel = 'none'
 extra = '-crf 63 -c:v libx264'  # default extra settings
 
 # Argument parser for command-line options
