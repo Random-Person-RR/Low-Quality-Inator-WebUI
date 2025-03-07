@@ -19,6 +19,12 @@ Then run the python script, and you're done.
 
 `git clone https://github.com/Random-Person-RR/Low-Quality-Inator-WebUI.git`
 
+### Arch (btw):
+`sudo pacman -Syu` and`sudo pacman -S ffmpeg`
+
+### Other distros:
+either use `apt update` and `apt install ffmpeg` or do it like your package manager does it, and do not use pip for ffmpeg as it doesn't actually allow for ffmpeg functionality.
+
 `pip install yt-dlp flask`
 
 `python /path/to/script/low_quality_convertor_webui.py`
