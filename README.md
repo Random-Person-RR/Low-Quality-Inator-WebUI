@@ -23,7 +23,7 @@ Then run the python script, and you're done.
 `sudo pacman -Syu` and`sudo pacman -S ffmpeg`
 
 ### Other distros:
-either use `apt update` and `apt install ffmpeg` or do it like your package manager does it, and do not use pip for ffmpeg as it doesn't actually allow for ffmpeg functionality.
+either use `apt update` and `apt install ffmpeg` or install it by using your package manager if you know how to, otherwise google it or something, and do not use pip for ffmpeg as it doesn't actually allow for ffmpeg functionality.
 
 `pip install yt-dlp flask`
 
